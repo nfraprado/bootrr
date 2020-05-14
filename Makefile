@@ -14,6 +14,7 @@ HELPERS := assert_file_is_empty \
 	   bootrr-auto \
 	   bootrr-generic-tests \
 	   ensure_lib_firmware \
+	   kernel_greater_than \
 	   rproc-start \
 	   rproc-stop \
 	   value_in_range \

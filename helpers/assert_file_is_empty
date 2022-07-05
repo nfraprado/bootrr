@@ -16,6 +16,6 @@ then
 	test_report_exit skip
 fi
 
-timeout ${TIMEOUT} [ -s "${FILEPATH}" ] || test_report_exit pass
+timeout ${TIMEOUT} [ -n "$(cat "${FILEPATH}")" ] || test_report_exit pass
 
 test_report_exit fail
